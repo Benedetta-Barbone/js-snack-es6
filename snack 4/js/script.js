@@ -34,3 +34,8 @@ for (let squadra of squadre) {
 
 
 console.log(squadre);
+
+
+const squadreFalli = squadre.map(({ nome, falli }) => ({ nome, falli }));
+
+console.log(squadreFalli);

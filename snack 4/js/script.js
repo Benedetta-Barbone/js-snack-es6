@@ -27,3 +27,10 @@ function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+for (let squadra of squadre) {
+  squadra.punti = getRandomNumber(0, 50);  
+  squadra.falli = getRandomNumber(0, 50);
+}  
+
+
+console.log(squadre);

@@ -9,3 +9,15 @@ const biciclette = [
   { nome: 'Bicicletta3', peso: 6.8 },
   { nome: 'Bicicletta4', peso: 8.4 }
 ];
+
+let pesoMinore = biciclette[0];
+
+for (let bici of biciclette) {
+    if (bici.peso < pesoMinore.peso) {
+        pesoMinore = bici;
+    }
+}
+
+const {nome, peso} = pesoMinore;
+
+console.log(`La bici che pesa di meno è la ${nome} con un peso di ${peso} kg.`);
